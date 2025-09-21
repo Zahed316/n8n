@@ -1,0 +1,4 @@
+localhost {
+  reverse_proxy http://n8n:5678
+  tls /certs/localhost.pem /certs/localhost-key.pem
+}
