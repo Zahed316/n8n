@@ -7,6 +7,7 @@
 ## First-time setup
 1. Ensure the `docker-data/n8n` directory exists (created by default in the repo).
 2. (Optional) Export `N8N_HOST` and `GENERIC_TIMEZONE` in your shell to override the defaults used in `docker-compose.yml`.
+3. For reverse-proxy deployments the compose file sets `WEBHOOK_URL=https://localhost/` and `N8N_EDITOR_BASE_URL=https://localhost/` so OAuth redirects and webhooks use the HTTPS endpoint served by Caddy.
 
 ## Enable trusted HTTPS on Windows (optional but recommended)
 1. Install mkcert (pick one):

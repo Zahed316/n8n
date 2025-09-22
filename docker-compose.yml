@@ -12,6 +12,8 @@ services:
       TZ: ${GENERIC_TIMEZONE:-Etc/UTC}
       N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS: "true"
       N8N_RUNNERS_ENABLED: "true"
+      WEBHOOK_URL: https://localhost/
+      N8N_EDITOR_BASE_URL: https://localhost/
     volumes:
       - ./docker-data/n8n:/home/node/.n8n
 
